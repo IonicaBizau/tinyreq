@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
+  "bin": {
+      "tinyreq": "./bin/tinyreq"
+  },
   "directories": {
     "example": "example",
     "test": "test"
