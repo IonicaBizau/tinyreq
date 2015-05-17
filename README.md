@@ -1,34 +1,45 @@
+![](http://i.imgur.com/FEAaOq2.png)
+
 # tinyreq
 Tiny library for making http(s) requests.
 
 ## Installation
-Run the following commands to download and install the application:
 
-```sh
-$ git clone git@github.com:IonicaBizau/tinyreq.git tinyreq
-$ cd tinyreq
-$ npm install
+```
+$ npm install tinyreq
+```
+
+There is a cli version (which can be installed via `npm i -g tinyreq`). Run `tinyreq -h` for help info.
+
+## Example
+
+```js
+// Dependencies
+var TinyReq = require("tinyreq");
+
+// Make a request
+TinyReq("http://example.com/", function (err, body) {
+    console.log(err || body);
+});
 ```
 
 ## Documentation
-## `TinyReq(options, callback)`
+### `TinyReq(options, callback)`
 Creates http(s) requests.
 
-### Params 
-- **String|Object** `options`: A string being the request url or an object containing the following fields: 
+#### Params
+- **String|Object** `options`: A string being the request url or an object containing the following fields:
  - `url` (String): The request url.
  - `method` (String): The request method.
  - `data` (Object): The request POST data.
 
 - **Function** `callback`: The callback function called (with `error` and `data` parameters).
 
-### Return
+#### Return
 - **Object** The request object.
 
 
-
 ## How to contribute
-
 1. File an issue in the repository, using the bug tracker, describing the
    contribution you'd like to make. This will help us to get you started on the
    right foot.
