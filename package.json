@@ -4,17 +4,11 @@
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
   "bin": {
-      "tinyreq": "./bin/tinyreq"
+    "tinyreq": "./bin/tinyreq"
   },
   "directories": {
     "example": "example",
     "test": "test"
-  },
-  "dependencies": {
-    "ul": "^2.1.0"
-  },
-  "devDependencies": {
-    "mocha": "^2.2.5"
   },
   "scripts": {
     "test": "mocha test"
@@ -34,5 +28,13 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/tinyreq/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/tinyreq"
+  "homepage": "https://github.com/IonicaBizau/tinyreq",
+  "dependencies": {
+    "bug-killer": "^1.0.0",
+    "clp": "^1.2.0",
+    "ul": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
 }
