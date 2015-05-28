@@ -20,3 +20,18 @@ it("should support https requests", function (cb) {
         cb();
     });
 });
+
+// Piping
+it("should support piping and no callback", function (cb) {
+    var str = TinyReq("http://example.com/");
+
+    var body = "";
+    str.on("data", function (chunk) {
+        body += chunk.toString();
+    });
+
+    str.on("end", function (chunk) {
+        Assert.equal(!!/this domain/gi.test(body), true);
+        cb();
+    });
+});
