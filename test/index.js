@@ -23,9 +23,15 @@ it("should support https requests", function (cb) {
 
 // Piping
 it("should support piping and no callback", function (cb) {
-    var str = TinyReq("http://example.com/");
 
-    var body = "";
+    var str = TinyReq("http://example.com")
+      , body = ""
+      ;
+
+    str.on("error", function (e) {
+        cb(e);
+    });
+
     str.on("data", function (chunk) {
         body += chunk.toString();
     });
