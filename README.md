@@ -35,8 +35,9 @@ Creates http(s) requests.
 
 - **Function** `callback`: The callback function called (with `error` and `data` parameters).
 
-#### Return
-- **Object** The request object.
+### Return
+- **EventEmitter** An event emitter you can use for listening for the `data`, `error` and `end` events.
+
 
 
 ## How to contribute
