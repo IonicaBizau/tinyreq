@@ -30,11 +30,14 @@
   },
   "homepage": "https://github.com/IonicaBizau/tinyreq",
   "dependencies": {
-    "bug-killer": "^1.0.0",
-    "clp": "^1.2.0",
-    "ul": "^2.1.0"
+    "bug-killer": "^4.0.0",
+    "clp": "^3.0.0",
+    "ul": "^5.0.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5"
+  },
+  "blah": {
+    "h_img": "http://i.imgur.com/FEAaOq2.png"
   }
 }
