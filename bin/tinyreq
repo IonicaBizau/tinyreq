@@ -8,10 +8,6 @@ var TinyReq = require("../lib")
   , Package = require("../package")
   ;
 
-// Configurations
-Logger.config.displayDate = false;
-Logger.config.logLevel = 4;
-
 // CLP Parser
 var urlOpt = new Clp.Option(["u", "url"], "The request url.", "url")
   , methOpt = new Clp.Option(["m", "method"], "The request method.", "method")
