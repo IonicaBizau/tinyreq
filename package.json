@@ -1,6 +1,6 @@
 {
   "name": "tinyreq",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
   "bin": {
@@ -23,7 +23,7 @@
     "https",
     "requests"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "KINDLY",
   "bugs": {
     "url": "https://github.com/IonicaBizau/tinyreq/issues"
