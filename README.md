@@ -1,44 +1,18 @@
 [![tinyreq](http://i.imgur.com/FEAaOq2.png)](#)
 
-# `$ tinyreq` [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Downloads](https://img.shields.io/npm/dt/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# tinyreq [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Downloads](https://img.shields.io/npm/dt/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Tiny library for making http(s) requests.
 
-## Installation
-
-You can install the package globally and use it as command line tool:
-
-```sh
-$ npm i -g tinyreq
-```
-
-Then, run `tinyreq --help` and see what the CLI tool can do.
-
-```sh
-$ tinyreq --help
-Usage: tinyreq [options]
-
-Options:
-  -u, --url <url>        The request url.                            
-  -m, --method <method>  The request method.                         
-  -d, --data <data>      The request data.                           
-  -f, --fields <fields>  Other fields to merge in the request object.
-  -h, --help             Displays this help.                         
-  -v, --version          Displays version information.               
-
-Examples:
-  tinyreq -u http://ionicabizau.net
-
-Documentation can be found at https://github.com/IonicaBizau/tinyreq
-```
-
-## Example
-
-Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm`:
+## :cloud: Installation
 
 ```sh
 $ npm i --save tinyreq
 ```
+
+:bulb: **ProTip**: You can install the [cli version of this module](http://github.com/IonicaBizau/tinyreq-cli) by running `npm i -g tinyreq-cli`
+
+## :clipboard: Example
 
 ```js
 // Dependencies
@@ -50,23 +24,33 @@ TinyReq("http://example.com/", function (err, body) {
 });
 ```
 
-## Documentation
+## :memo: Documentation
 
-For full API reference, see the [DOCUMENTATION.md][docs] file.
+### `tinyreq(options, callback)`
+Creates http(s) requests.
 
-## How to contribute
+#### Params
+- **String|Object** `options`: A string being the request url or an object containing the following fields:
+ - `url` (String): The request url.
+ - `method` (String): The request method.
+ - `data` (Object): The request POST data.
+- **Function** `callback`: The callback function called (with `error` and `data` parameters).
+
+#### Return
+- **EventEmitter** An event emitter you can use for listening for the `data`, `error` and `end` events.
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`github-colors`](https://github.com/IonicaBizau/github-colors)
+ - [`github-colors`](https://github.com/IonicaBizau/github-colors)—GitHub colors and file extensions mapping
+ - [`jsonrequest`](https://github.com/IonicaBizau/node-jsonrequest)—A tiny library for requesting and getting JSON resources.
+ - [`tinyreq-cli`](https://github.com/IonicaBizau/tinyreq-cli#readme)—A cli tool for making http(s) requests. CLI for tinyreq.
+ - [`wrabbit`](https://github.com/jillix/wrabbit) (by jillix)—Wrap scripts by providing the wrapping function.
 
- - [`jsonrequest`](https://github.com/IonicaBizau/node-jsonrequest)
-
- - [`wrabbit`](https://github.com/jillix/wrabbit) by jillix
-
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 

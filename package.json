@@ -3,9 +3,6 @@
   "version": "3.0.0",
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
-  "bin": {
-    "tinyreq": "./bin/tinyreq"
-  },
   "directories": {
     "example": "example",
     "test": "test"
@@ -36,6 +33,7 @@
     "mocha": "^2.2.5"
   },
   "blah": {
-    "h_img": "http://i.imgur.com/FEAaOq2.png"
+    "h_img": "http://i.imgur.com/FEAaOq2.png",
+    "cli": "tinyreq-cli"
   }
 }
