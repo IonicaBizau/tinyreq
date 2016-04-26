@@ -1,6 +1,6 @@
 {
   "name": "tinyreq",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
   "directories": {
@@ -35,5 +35,16 @@
   "blah": {
     "h_img": "http://i.imgur.com/FEAaOq2.png",
     "cli": "tinyreq-cli"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
