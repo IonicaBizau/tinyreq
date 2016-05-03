@@ -31,6 +31,7 @@ tinyreq("http://example.com/", (err, body) => {
 
 ## :memo: Documentation
 
+
 ### `tinyreq(options, callback)`
 Creates http(s) requests.
 
