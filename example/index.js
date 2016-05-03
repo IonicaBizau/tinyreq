@@ -1,7 +1,6 @@
-// Dependencies
-var TinyReq = require("../lib");
+const tinyreq = require("../lib");
 
 // Make a request to example.com
-TinyReq("http://example.com/", function (err, body) {
+tinyreq("http://example.com/", (err, body) => {
     console.log(err || body);
 });

@@ -1,7 +1,7 @@
 ## Documentation
 You can see below the API reference of this module.
 
-### `TinyReq(options, callback)`
+### `tinyreq(options, callback)`
 Creates http(s) requests.
 
 #### Params

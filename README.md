@@ -1,6 +1,9 @@
+
 [![tinyreq](http://i.imgur.com/FEAaOq2.png)](#)
 
-# tinyreq [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Downloads](https://img.shields.io/npm/dt/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# tinyreq
+
+ [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Downloads](https://img.shields.io/npm/dt/tinyreq.svg)](https://www.npmjs.com/package/tinyreq) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Tiny library for making http(s) requests.
 
@@ -10,16 +13,18 @@
 $ npm i --save tinyreq
 ```
 
+
 :bulb: **ProTip**: You can install the [cli version of this module](http://github.com/IonicaBizau/tinyreq-cli) by running `npm i -g tinyreq-cli`
 
 ## :clipboard: Example
 
+
+
 ```js
-// Dependencies
-var TinyReq = require("tinyreq");
+const tinyreq = require("tinyreq");
 
 // Make a request to example.com
-TinyReq("http://example.com/", function (err, body) {
+tinyreq("http://example.com/", (err, body) => {
     console.log(err || body);
 });
 ```
@@ -39,14 +44,18 @@ Creates http(s) requests.
 #### Return
 - **EventEmitter** An event emitter you can use for listening for the `data`, `error` and `end` events.
 
+
+
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 ## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
+
+ - [`cheerio-req`](https://github.com/IonicaBizau/cheerio-req#readme)—An http request module sending back a Cheerio object.
  - [`github-colors`](https://github.com/IonicaBizau/github-colors)—GitHub colors and file extensions mapping
- - [`jsonrequest`](https://github.com/IonicaBizau/node-jsonrequest)—A tiny library for requesting and getting JSON resources.
+ - [`jsonrequest`](https://github.com/IonicaBizau/jsonrequest)—A tiny library for requesting and getting JSON resources.
  - [`tinyreq-cli`](https://github.com/IonicaBizau/tinyreq-cli#readme)—A cli tool for making http(s) requests. CLI for tinyreq.
  - [`wrabbit`](https://github.com/jillix/wrabbit) (by jillix)—Wrap scripts by providing the wrapping function.
 
