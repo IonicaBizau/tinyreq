@@ -40,6 +40,7 @@ Creates http(s) requests.
  - `url` (String): The request url.
  - `method` (String): The request method.
  - `data` (Object): The request POST data.
+ - `encoding` (String): The encoding type.
 - **Function** `callback`: The callback function called (with `error` and `data` parameters).
 
 #### Return
