@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/IonicaBizau/tinyreq",
   "dependencies": {
+    "follow-redirects": "^0.2.0",
     "ul": "^5.0.0"
   },
   "devDependencies": {
