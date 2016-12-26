@@ -50,7 +50,8 @@ Creates http(s) requests.
  - `url` (String): The request url.
  - `method` (String): The request method.
  - `data` (Object): The request POST data.
- - `encoding` (String): The encoding type.
+ - `encoding` (String): The response encoding type.
+ - `data_encoding` (String): The request encoding type.
 - **Function** `callback`: The callback function called (with `error` and `data` parameters).
 
 #### Return
@@ -76,6 +77,7 @@ If you are using this library in one of your projects, add it in this list. :spa
 
 
  - [`bandcamp-scraper`](https://github.com/masterT/bandcamp-scraper) (by Simon Thiboutôt)—A scraper for https://bandcamp.com
+ - [`bnr`](https://github.com/Bloggify/node-bnr#readme) (by Bloggify)—Access resources (e.g. exchange rates) provided by the National Bank of Romania.
  - [`cheerio-req`](https://github.com/IonicaBizau/cheerio-req#readme)—An http request module sending back a Cheerio object.
  - [`github-colors`](https://github.com/IonicaBizau/github-colors)—GitHub colors and file extensions mapping
  - [`jsonrequest`](https://github.com/IonicaBizau/jsonrequest)—A tiny library for requesting and getting JSON resources.
