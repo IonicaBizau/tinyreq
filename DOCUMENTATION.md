@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates http(s) requests.
 
 #### Params
+
 - **String|Object** `options`: A string being the request url or an object containing the following fields:
  - `url` (String): The request url.
  - `method` (String): The request method.
