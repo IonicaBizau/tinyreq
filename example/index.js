@@ -6,11 +6,14 @@ tinyreq("http://example.com/", (err, body) => {
 });
 
 // Make a request with custom headers
+// Using a promise
 tinyreq({
     url: "http://example.com/"
   , headers: {
         "user-agent": "Crawler/1.0"
     }
-}, (err, body) => {
-    console.log(err || body);
+}).then(body => {
+    console.log(body);
+}).catch(err => {
+    console.log(err);
 });
