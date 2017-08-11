@@ -29,6 +29,7 @@
   "dependencies": {
     "assured": "^1.0.6",
     "follow-redirects": "^0.2.0",
+    "noop6": "^1.0.6",
     "ul": "^5.0.0"
   },
   "devDependencies": {
