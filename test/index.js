@@ -1,56 +1,52 @@
 // Dependencies
-var Assert = require("assert")
-  , TinyReq = require("../lib")
-  , http = require("http")
-  ;
-
-mocha.setup({ timeout: 5000 });
+const Assert = require("assert")
+    , TinyReq = require("../lib")
 
 // http
-it("should support http requests", function (cb) {
-    TinyReq("http://example.com/", function (err, body) {
-        Assert.equal(err, null);
-        Assert.equal(!!/this domain/gi.test(body), true);
-        cb();
-    });
-});
+it("should support http requests", cb => {
+    TinyReq("http://example.com/", (err, body) => {
+        Assert.equal(err, null)
+        Assert.equal(!!/this domain/gi.test(body), true)
+        cb()
+    })
+})
 
 // http
-it("should support promises", function (cb) {
+it("should support promises", cb => {
     TinyReq("http://example.com/").then(body => {
-        Assert.equal(!!/this domain/gi.test(body), true);
-        cb();
+        Assert.equal(!!/this domain/gi.test(body), true)
+        cb()
     }).catch(err => {
-        cb(err);
-    });
-});
+        cb(err)
+    })
+})
 
 // https
-it("should support https requests", function (cb) {
-    TinyReq("https://github.com", function (err, body) {
-        Assert.equal(err, null);
-        Assert.equal(!!/GitHub/gi.test(body), true);
-        cb();
-    });
-});
+it("should support https requests", cb => {
+    TinyReq("https://example.com", (err, body) => {
+        Assert.equal(err, null)
+        Assert.equal(!!/this domain/gi.test(body), true)
+        cb()
+    })
+})
 
 // Piping
-it("should support piping and no callback", function (cb) {
+it("should support piping and no callback", cb => {
 
-    var str = TinyReq("http://example.com")
+    let str = TinyReq("http://example.com")
       , body = ""
-      ;
 
-    str.on("error", function (e) {
-        cb(e);
-    });
 
-    str.on("data", function (chunk) {
-        body += chunk.toString();
-    });
+    str.on("error", e => {
+        cb(e)
+    })
 
-    str.on("end", function (chunk) {
-        Assert.equal(!!/this domain/gi.test(body), true);
-        cb();
-    });
-});
+    str.on("data", chunk => {
+        body += chunk.toString()
+    })
+
+    str.on("end", chunk => {
+        Assert.equal(!!/this domain/gi.test(body), true)
+        cb()
+    })
+})
