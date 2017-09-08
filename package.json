@@ -1,6 +1,6 @@
 {
   "name": "tinyreq",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
   "directories": {
@@ -49,6 +49,9 @@
     "resources/",
     "menu/",
     "cli.js",
-    "index.js"
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
   ]
 }
