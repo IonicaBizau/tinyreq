@@ -30,6 +30,15 @@ it("should support https requests", cb => {
     })
 })
 
+// https
+it("should support gzipped results", cb => {
+    TinyReq("http://htmlcolorcodes.com/color-chart/flat-design-color-chart/", (err, body) => {
+        Assert.equal(err, null)
+        Assert.equal(!!/flat design/gi.test(body), true)
+        cb()
+    })
+})
+
 // Piping
 it("should support piping and no callback", cb => {
 
