@@ -52,7 +52,9 @@ There are few ways to get help:
 
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
+
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
 
 
 ## :memo: Documentation
@@ -108,8 +110,10 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`github-colors`](https://github.com/IonicaBizau/github-colors)—GitHub colors and file extensions mapping
  - [`jsonrequest`](https://github.com/IonicaBizau/jsonrequest)—A tiny library for requesting and getting JSON resources.
  - [`lwipify`](https://github.com/IonicaBizau/lwipify#readme)—Convert images in lwip objects.
+ - [`medivia-api`](https://github.com/ethkat/medivia-nodejs-api#readme) (by Ethaan)—Medivia.org NodeJS API
  - [`mun`](https://github.com/theuves/mun#readme) (by Matheus Alves)—Obter informações de municípios do brasileiros.
  - [`page-changed`](https://github.com/IonicaBizau/node-page-changed)—Call a function when the page body is changed.
+ - [`payiota`](https://github.com/arizona2014/node-payiota#readme) (by Andy Lisac)—A Node.js wrapper around the Payiota.me API.
  - [`tibia-api`](https://github.com/Ethaan/nodejs-tibia-api#readme) (by Ethaan)—NodeJS Tibia.com API
  - [`tinyreq-cli`](https://github.com/IonicaBizau/tinyreq-cli#readme)—A cli tool for making http(s) requests. CLI for tinyreq.
  - [`wrabbit`](https://github.com/jillix/wrabbit) (by jillix)—Wrap scripts by providing the wrapping function.
