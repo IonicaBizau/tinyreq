@@ -1,6 +1,6 @@
 {
   "name": "tinyreq",
-  "version": "3.2.6",
+  "version": "3.3.0",
   "description": "Tiny library for making http(s) requests.",
   "main": "lib/index.js",
   "directories": {
