@@ -12,11 +12,15 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save tinyreq
+# Using npm
+npm install --save tinyreq
+
+# Using yarn
+yarn add tinyreq
 ```
 
 
-:bulb: **ProTip**: You can install the [cli version of this module](http://github.com/IonicaBizau/tinyreq-cli) by running `npm i -g tinyreq-cli`
+:bulb: **ProTip**: You can install the [cli version of this module](http://github.com/IonicaBizau/tinyreq-cli) by running `npm install --global tinyreq-cli` (or `yarn global add tinyreq-cli`).
 
 ## :clipboard: Example
 
