@@ -27,10 +27,10 @@
   },
   "homepage": "https://github.com/IonicaBizau/tinyreq",
   "dependencies": {
-    "assured": "^1.0.6",
-    "follow-redirects": "^0.2.0",
-    "noop6": "^1.0.6",
-    "ul": "^5.0.0"
+    "assured": "^1.0.12",
+    "follow-redirects": "^1.4.1",
+    "noop6": "^1.0.7",
+    "ul": "^5.2.13"
   },
   "devDependencies": {
     "mocha": "^2.2.5"
